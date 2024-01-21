@@ -20,7 +20,7 @@ const Chat = () => {
     return () => {
       socket.off();
     };
-  }, [chatMessage, receiveMessage]);
+  }, []);
 
   const send = () => {
     const message = document.getElementById("ChatInput").value;

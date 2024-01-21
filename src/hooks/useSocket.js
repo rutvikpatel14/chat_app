@@ -5,7 +5,6 @@ export const ENDPOINT = "http://localhost:4000/";
 
 export const useSocket = () => {
   const connect = () => {
-    if (socket) return;
     socket = socketIO(ENDPOINT, { transports: ["websocket"] });
     socket.on("connect", () => {
       alert("Connected");
