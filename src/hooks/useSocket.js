@@ -1,7 +1,7 @@
 import socketIO from "socket.io-client";
 
 export let socket;
-export const ENDPOINT = 'ws://my-chat-app-server.onrender.com';
+export const ENDPOINT = 'wss://my-chat-app-server.onrender.com';
 
 export const useSocket = () => {
   const connect = () => {
