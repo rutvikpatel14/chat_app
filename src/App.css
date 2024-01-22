@@ -22,20 +22,20 @@ body {
 
     .JoinContainer>h1 {
         font-size: 6vw !important;
-        width: 55vw;
+        width: 50vw;
         border-bottom: 0.6vw solid white;
         padding: 3vw;
     }
 
     #joinInput {
-        width: 55vw;
+        width: 55vw !important;
         padding: 4vw !important;
         font-size: 5vw !important;
         margin: 5vw !important;
     }
 
     .JoinBtn {
-        width: 55vw;
+        width: 55vw !important;
         padding: 4vw !important;
         font-size: 5vw !important;
         margin: 2vmax;
@@ -44,21 +44,17 @@ body {
 
     .ChatContainer {
         background-color: white;
-        height: 85% !important;
+        height: 100% !important;
         width: 100% !important;
     }
 
-    .Header {
-        height: 10%;
-    }
-
     .Header>h2 {
-        margin: 8vw !important;
+        margin: 7vw !important;
         font-size: 5vw !important;
     }
 
     .Header img {
-        margin: 6vw !important;
+        margin: 13vw !important;
         transform: scale(2) !important;
     }
 
@@ -67,7 +63,7 @@ body {
     }
 
     .ChatBox {
-        height: 80% !important;
+        height: 70% !important;
 
     }
 
