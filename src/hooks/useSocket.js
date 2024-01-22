@@ -1,12 +1,13 @@
 import socketIO from "socket.io-client";
 
 export let socket;
-export const ENDPOINT = process.env.PORT;
+export const ENDPOINT = 'ws://my-chat-app-server.onrender.com';
 
 export const useSocket = () => {
   const connect = () => {
+    if(socket) return
     socket = socketIO(ENDPOINT, { transports: ["websocket"] });
-    socket.on("connect", () => {
+    socket.on("sendMessage", () => {
       alert("Connected");
     });
   };
@@ -16,7 +17,9 @@ export const useSocket = () => {
   };
 
   const receiveMessage = (handleMessage) => {
-    socket.on("sendMessage", handleMessage);
+    if(socket){
+      socket.on("sendMessage", handleMessage);
+    }
   };
 
   const disconnect = () => {
